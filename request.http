@@ -1,4 +1,29 @@
-GET http://localhost:3000/get_contacts.json
+### contact index
+GET http://localhost:3000/contacts.json
 
-###
-GET http://localhost:3000/get_contacts.json
+### contact create
+POST http://localhost:3000/contacts.json
+Content-Type: application/json
+
+{
+  "first_name": "jordan",
+  "last_name": "speith",
+  "email": "jordanspeith@gmail.com",
+  "phone_number": "3287837927"
+}
+
+### contact show
+GET http://localhost:3000/contacts/5.json
+
+### contact update
+PATCH http://localhost:3000/contacts/6.json
+Content-Type: application/json
+
+{
+  "first_name": "tiger",
+  "last_name": "woods",
+  "email": "tiger@goole.com",
+  "phone_number": "6506906033"
+}
+### contact update
+DELETE http://localhost:3000/contacts/3.json

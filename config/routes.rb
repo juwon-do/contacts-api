@@ -5,5 +5,11 @@ Rails.application.routes.draw do
   # root "articles#index"
   # get "get_contacts" => "contacts#action"
 
-  get "get_contacts" => "contacts#all_contacts"
+  get "contacts" => "contacts#index"
+  post "contacts" => "contacts#create"
+  get "contacts/:id" => "contacts#show"
+  patch "contacts/:id" =>
+  "contacts#update"
+  delete "contacts/:id" =>
+  "contacts#destroy"
 end

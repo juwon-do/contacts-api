@@ -1,0 +1,5 @@
+@contacts.map do |contact|
+  {
+    id: contact.id
+  }
+end
