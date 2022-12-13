@@ -9,7 +9,8 @@ Content-Type: application/json
   "first_name": "jordan",
   "last_name": "speith",
   "email": "jordanspeith@gmail.com",
-  "phone_number": "3287837927"
+  "phone_number": "3287837927",
+  "address": "2760 s highland ave il 60148"
 }
 
 ### contact show

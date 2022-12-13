@@ -50,3 +50,5 @@ end
 gem 'faker'
 
 gem 'jb'
+
+gem 'geocoder'

@@ -4,11 +4,15 @@ class ContactsController < ApplicationController
     render json: contacts.as_json
   end
   def create
+    results = Geocoder.search(params[:address])
     contact = Contact.new(
       first_name: params[:first_name],
       last_name: params[:last_name],
       email: params[:email],
-      phone_number: params[:phone_number]
+      phone_number: params[:phone_number],
+      address: params[:address],
+      latitude: results.first.coordinates[0],
+      longitude: results.first.coordinates[1]
     )
     contact.save
     render json: contact.as_json
