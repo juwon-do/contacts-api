@@ -16,6 +16,9 @@ class ContactsController < ApplicationController
     )
     contact.save
     render json: contact.as_json
+    if 
+    else
+    end
   end
   def show
     contact = Contact.find_by(id: params[:id])
